@@ -1,0 +1,24 @@
+.result{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: large;
+    
+}
+.resultContaine{
+    height:300px;
+    width:320px;
+    border: 1px solid #868686;
+    margin: auto;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+.resultContaine img{
+    height: 180px;
+    width: 180px;
+}
+.resultContaine h1{
+    margin-bottom: 0;
+}

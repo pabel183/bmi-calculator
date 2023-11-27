@@ -31,7 +31,7 @@ const Home=(props)=>{
                 <button className={button1?"buttonColor":null} onClick={buttonHandalar} value="male">Male</button>
                 <button className={button2?"buttonColor":null} onClick={buttonHandalar} value="female">Female</button>
         </div>
-        <div>
+        <div className="forwordIcon">
         <ForwardIcon destination="/calculate" value={value}/>
         </div>
         </div>

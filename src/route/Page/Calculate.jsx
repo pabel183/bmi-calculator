@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { v4 as uuidv4 } from 'uuid';
 import "./Calculate.css";
 import male from "../../images/male.jpg";
 import female from "../../images/female.jpg";
@@ -34,8 +35,10 @@ const Calculate = () => {
                     <div className="list">
                         {
                             heightItems.map((value) => {
+                                const key=uuidv4();
+                                const targedItem=uuidv4();
                                 return (
-                                    <ItemList listStyle="listStyle" value={value} name="height" />
+                                    <ItemList key={key} listStyle="listStyle" value={value} name="height" targedItem={targedItem} />
                                 );
                             })
                         }
@@ -48,8 +51,10 @@ const Calculate = () => {
                     <div className="list">
                         {
                             weightItems.map((value) => {
+                                const key=uuidv4();
+                                const targedItem=uuidv4();
                                 return (
-                                    <ItemList listStyle="listStyle" value={value} name="weight" />
+                                    <ItemList key={key} listStyle="listStyle" value={value} name="weight" targedItem={targedItem}/>
                                 );
                             })
                         }

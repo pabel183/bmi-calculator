@@ -18,7 +18,7 @@ const Result = () => {
         <div className="result">
             <BackwardIcon destination="/calculate" value={value}/>
             <div className="resultContaine">
-            <img src={(value==="male")?male:female} alt="male/femal" />
+                <img src={(value==="male")?male:female} alt="male/femal" />
                 <h1>Your BMI is {bmi.toFixed(1)}</h1>
             </div>
             <img src={resultParameter} alt="ResultParameter" />

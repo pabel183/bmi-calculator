@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../Page/Calculate.css";
 import { IconButton } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import ArrowForwardSharpIcon from '@mui/icons-material/ArrowForwardSharp';
+import EastIcon from '@mui/icons-material/East';
 
 export const ForwardIcon = props => {   
     const navigate = useNavigate();
@@ -14,8 +14,8 @@ export const ForwardIcon = props => {
    }
     return (
         <div className="forwardIcon">
-            <IconButton className="material-icons" onClick={() => navigate(props.destination,{state:{data:props.value}})}>
-                <ArrowForwardSharpIcon className="arrowForwardIcon" />
+            <IconButton className="material-icons custom-icon" onClick={() => navigate(props.destination,{state:{data:props.value}})}>
+                <EastIcon className="arrowForwardIcon" />
             </IconButton>
         </div>
     );

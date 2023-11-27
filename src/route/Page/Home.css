@@ -1,36 +1,66 @@
 .home{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-weight: 900;
-    font-size: x-large;
-    
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: 900;
+  font-size: x-large;
+  margin-top: 40px;
 }
 .images img{
-    height: 180px;
-    width: 180px;
+margin-top: 40px;
+  height: 180px;
+  width: 180px;
 }
 
 .genderSelector {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #868686;
-    width: 190px;
-    margin: auto;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-radius: 20px;
-    gap: 6px;
-  }
-  
-  button {
-    width: 90px;
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 20px;  
-  } 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #868686;
+  width: 190px;
+  margin: auto;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 20px;
+  gap: 6px;
+}
+div.genderSelector{
+  margin-top: 20px;
+}
+button {
+  width: 90px;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;  
+} 
 .buttonColor {
-    background-color: transparent;
+  background-color: transparent;
+}
+
+.forwordIcon{
+  margin-top: 60px;
+}
+
+
+@media only screen and (max-width: 360px) and (max-height: 740px) {
+  /* CSS rules for mobile devices with a screen size of 360x740 pixels */
+
+
+.home{
+  font-weight: 700;
+      font-size: large;
+  margin-top: 120px;
+}
+.images img{
+  height: 120px;
+  width: 120px;
+}
+
+  div.genderSelector{
+    margin-top: 40px;
+  }
+.forwordIcon{
+  margin-top: 120px;
+}
 }

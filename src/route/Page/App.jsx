@@ -4,10 +4,7 @@ import Calculate from "./Calculate";
 import Result from "./Result";
 import male from "../../images/male.jpg";
 import femal from "../../images/female.jpg";
-import Test from "./Test";
-
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
-
 import MyContext from "./MyContext";
 
 const App=()=>{
@@ -21,7 +18,6 @@ const App=()=>{
                 <Route path="/" element={ <Home maleImage={male} femalImage={femal} /> } />
                 <Route path="/calculate" element={<Calculate />} />
                 <Route path="/result" element={<Result />} />
-                <Route path="/test" element={<Test/>} />
             </Routes>
         </Router>
         </MyContext.Provider>

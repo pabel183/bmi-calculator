@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./IconComponent.css";
 import { IconButton } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import EastIcon from '@mui/icons-material/East';
+import TrendingFlatSharpIcon from '@mui/icons-material/TrendingFlatSharp';
 
 export const BackwardIcon = props => {   
     const navigate = useNavigate();
@@ -19,7 +19,6 @@ export const BackwardIcon = props => {
 
 export const ForwardIcon = props => {   
     const navigate = useNavigate();
-   // console.log(props.value+"sjdlkj");
    if(props.name==="height"){
     console.log(props.value);
     console.log("oh value is found");
@@ -27,7 +26,7 @@ export const ForwardIcon = props => {
     return (
         <div className="forwardIcon">
             <IconButton className="material-icons custom-icon" onClick={() => navigate(props.destination,{state:{data:props.value}})}>
-                <EastIcon className="arrowForwardIcon" />
+                <TrendingFlatSharpIcon className="arrowForwardIcon" />
             </IconButton>
         </div>
     );

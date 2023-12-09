@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React,{ useRef } from "react";
 import Home from "./Home";
 import Calculate from "./Calculate";
 import Result from "./Result";
@@ -6,13 +6,12 @@ import male from "../../images/male.jpg";
 import femal from "../../images/female.jpg";
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import MyContext from "./MyContext";
+import "./App.css";
 
 const App=()=>{
-    const [height, setHeight] = useState(null);
-    const [weight, setWeight] = useState(null);
-    
+    const myRef=useRef({height:null,weight:null});
     return(
-        <MyContext.Provider value={ {height,setHeight,weight,setWeight} }>
+        <MyContext.Provider value={ myRef }>
         <Router>
             <Routes>
                 <Route path="/" element={ <Home maleImage={male} femalImage={femal} /> } />

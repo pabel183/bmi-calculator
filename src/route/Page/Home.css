@@ -1,17 +1,43 @@
+/* HomePage root coompnent flex */
 .home{
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-weight: 900;
-  font-size: x-large;
-  margin-top: 40px;
+  font-size: large;
+  color: #8B8B8B;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.images img{
-margin-top: 40px;
-  height: 180px;
-  width: 180px;
+/* 2nd stage coompnent flex */
+.home h1{
+display: flex;
+justify-content: space-around;
+padding-top: 2.5rem;
+}
+.home .mainCompoent{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+gap: 1.5rem;
+padding-bottom: 3rem;
 }
 
-.genderSelector {
+.home .forwardIcon {
+  display: flex;
+  justify-content: space-around;
+  align-items:flex-end;
+  align-content: flex-end;
+  align-self: flex-end;
+}
+/* 3rd stage coompnent flex */
+.mainCompoent .images{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainCompoent .genderSelector {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,46 +47,30 @@ margin-top: 40px;
   padding-top: 2px;
   padding-bottom: 2px;
   border-radius: 20px;
-  gap: 6px;
+  gap:.5rem;
 }
-div.genderSelector{
-  margin-top: 20px;
+
+/* 4th stage coompnent flex */
+.images img{
+  height: 180px;
+  width: 180px;
 }
-button {
+
+
+
+.genderSelector button {
   width: 90px;
   color: #000;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-  border-radius: 20px;  
+  border-radius: 20px; 
 } 
-.buttonColor {
+.colorTransparent{
   background-color: transparent;
-}
 
-.forwordIcon{
-  margin-top: 60px;
 }
 
 
 @media only screen and (max-width: 360px) and (max-height: 740px) {
-  /* CSS rules for mobile devices with a screen size of 360x740 pixels */
-
-
-.home{
-  font-weight: 700;
-      font-size: large;
-  margin-top: 120px;
-}
-.images img{
-  height: 120px;
-  width: 120px;
-}
-
-  div.genderSelector{
-    margin-top: 40px;
-  }
-.forwordIcon{
-  margin-top: 120px;
-}
 }

@@ -1,0 +1,21 @@
+
+.wheelPicker ul{
+    padding: 0;
+}
+ul.sc-hKgKIp::-webkit-scrollbar {
+    display: none;
+  }
+  .display ul::-webkit-scrollbar {
+    display: none;
+  }
+  .sc-bdfCDU{
+    display: none;
+    color: transparent;
+  }
+  .sc-hKgKIp li[aria-selected="true"] p{
+    border-top: 3px solid #B3B3B3;
+    border-bottom: 3px solid #B3B3B3;
+    font-size:x-large;
+    font-weight:bolder;
+  }
+  

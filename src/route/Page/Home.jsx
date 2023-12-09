@@ -10,7 +10,12 @@ const Home = (props) => {
     const buttonHandalar = (event) => {
         const value = event.target.value;
         setValue(value);
-            setColor(!isColor);
+        if(value==="female") {
+            setColor(true);
+        }
+        else {
+            setColor(false);
+        }
     }
 
     return (

@@ -1,4 +1,4 @@
-import React, { useRef,useContext } from 'react';
+import React, { useRef,useContext,useState } from 'react';
 import WheelPicker  from 'react-simple-wheel-picker';
 import Styled from "styled-components";
 import MyContext from '../Page/MyContext';
@@ -10,7 +10,6 @@ import "./ItemListComponent.css"
 const ItemList = (props) => {
 
 	const myRef=useContext(MyContext);
-
 	let heightArray = [], weightArray = [];
         let heigtVlaue=30;
         let weightValue=1;    
@@ -24,15 +23,13 @@ const ItemList = (props) => {
 
 	const heightId = heightArray.find(obj => obj.id === "30");
 	const weightId = weightArray.find(obj=>obj.id==="33");
-
+		
 	const heightSetup = target => {
-		console.log(target);
-		//setHeight(target);
+		myRef.current.refHeightId=target.id;
 		myRef.current.height=target.value;
 	};
 	const weightSetup=target=>{
-		console.log(target);
-		// setWeight(target);
+		myRef.current.refWeightId=target.id;
 		myRef.current.weight=target.value;
 	}
 
@@ -47,7 +44,11 @@ const ItemList = (props) => {
 			width={100}
 			titleText="Enter value same as aria-label"
 			itemHeight={30}
-			selectedID={ (props.name==="height") ? heightId.id:weightId.id}
+			selectedID={ 
+				(props.name==="height") ? 
+				(myRef.current.refHeightId===null?heightId.id:myRef.current.refHeightId) :
+				 (myRef.current.refWeightId===null?weightId.id:myRef.current.refWeightId)
+				}
 			activeColor="#333"
 			backgroundColor="#fff"
       		shadowColor="none"

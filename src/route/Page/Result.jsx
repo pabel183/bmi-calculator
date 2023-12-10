@@ -10,14 +10,9 @@ import MyContext from "./MyContext";
 const Result = () => {
     const location = useLocation();
     const value = location.state?.data;
-    //const height=location.state?.height;
-    //console.log(height);
     const myRef = useContext(MyContext);
     const heigtValue = myRef.current.height;
     const weightValue = myRef.current.weight;
-    console.log(heigtValue);
-    console.log("weight");
-    console.log(weightValue);
     const bmi = (weightValue * 100) / (heigtValue * heigtValue);
 
     return (

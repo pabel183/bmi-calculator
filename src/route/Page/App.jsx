@@ -9,7 +9,7 @@ import MyContext from "./MyContext";
 import "./App.css";
 
 const App=()=>{
-    const myRef=useRef({height:null,weight:null});
+    const myRef=useRef({height:null,weight:null,refHeightId:null,refWeightId:null});
     return(
         <MyContext.Provider value={ myRef }>
         <Router>

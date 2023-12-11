@@ -1,13 +1,12 @@
 import React, { useContext } from 'react';
+// eslint-disable-next-line
 import WheelPicker  from 'react-simple-wheel-picker';
 import MyContext from '../Page/MyContext';
+// eslint-disable-next-line
 import styled from 'styled-components';
 import "./ItemListComponent.css"
 
-const StyledWheelPicker = styled(WheelPicker)`
-  box-shadow: none;
-  background-color: red;
-`;
+
 
 const ItemList = (props) => {
 
@@ -38,7 +37,7 @@ const ItemList = (props) => {
 	return (
 		
     <div className='wheelPicker' style={{ display: 'flex', justifyContent: 'center' }}> 
-    <StyledWheelPicker
+    <WheelPicker
 			data={ (props.name==="height") ? heightArray:weightArray}
 			onChange={ (props.name==="height") ? heightSetup:weightSetup}
 			height={135}

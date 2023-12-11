@@ -1,4 +1,4 @@
-import React, { useRef, useContext } from "react";
+import React, { useContext } from "react";
 import { BackwardIcon } from "../component/IconComponent";
 import male from "../../images/male.jpg";
 import female from "../../images/female.jpg";

@@ -3,7 +3,6 @@ import { ForwardIcon } from "../component/IconComponent";
 import "./Home.css";
 
 const Home = (props) => {
-    const [isTransparent, setTransparent] = useState(false);
     const [isColor, setColor] = useState(false);
     const [value, setValue] = useState("male");
 

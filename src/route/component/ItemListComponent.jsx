@@ -1,11 +1,13 @@
-import React, { useRef,useContext,useState } from 'react';
+import React, { useContext } from 'react';
 import WheelPicker  from 'react-simple-wheel-picker';
-import Styled from "styled-components";
 import MyContext from '../Page/MyContext';
-
-import { RemoveScroll } from 'react-remove-scroll';
+import styled from 'styled-components';
 import "./ItemListComponent.css"
 
+const StyledWheelPicker = styled(WheelPicker)`
+  box-shadow: none;
+  background-color: red;
+`;
 
 const ItemList = (props) => {
 
@@ -33,11 +35,10 @@ const ItemList = (props) => {
 		myRef.current.weight=target.value;
 	}
 
-  const styleWheelPicker=Styled.WheelPicker;
 	return (
 		
     <div className='wheelPicker' style={{ display: 'flex', justifyContent: 'center' }}> 
-    <WheelPicker
+    <StyledWheelPicker
 			data={ (props.name==="height") ? heightArray:weightArray}
 			onChange={ (props.name==="height") ? heightSetup:weightSetup}
 			height={135}
@@ -49,10 +50,10 @@ const ItemList = (props) => {
 				(myRef.current.refHeightId===null?heightId.id:myRef.current.refHeightId) :
 				 (myRef.current.refWeightId===null?weightId.id:myRef.current.refWeightId)
 				}
-			activeColor="#333"
-			backgroundColor="#fff"
-      		shadowColor="none"
-			color="#B1B1B1"
+			 activeColor="#333"
+			 backgroundColor="#fff"
+      		 shadowColor="none"
+			 color="#B1B1B1"
 			fontSize={30}
 			
       

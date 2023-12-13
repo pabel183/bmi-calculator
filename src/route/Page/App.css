@@ -2,6 +2,13 @@
     background-color: white;
   }
   
+  @media (prefers-color-scheme: dark) {
+    :root {
+      background-color: white;
+    }
+  }
+  
+  
 #root,html,bode{
     display: flex;
     width: 100%;

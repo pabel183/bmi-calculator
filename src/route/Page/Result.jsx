@@ -13,7 +13,7 @@ const Result = () => {
     const myRef = useContext(MyContext);
     const heigtValue = myRef.current.height;
     const weightValue = myRef.current.weight;
-    const bmi = (weightValue * 100) / (heigtValue * heigtValue);
+    const bmi = (weightValue * 100*100) / (heigtValue * heigtValue);
 
     return (
         <div className="result">

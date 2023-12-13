@@ -14,7 +14,7 @@ const ItemList = (props) => {
 	let heightArray = [], weightArray = [];
         let heigtVlaue=30;
         let weightValue=1;    
-        for(let i=0;i<120;i++){
+        for(let i=0;i<170;i++){
             heightArray.push( {id:i.toString(),value:heigtVlaue} )
             weightArray.push({id:i.toString(),value:weightValue});
             heigtVlaue++;

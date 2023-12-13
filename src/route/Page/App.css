@@ -1,3 +1,6 @@
+:root {
+    color-scheme: only dark;
+  }
 #root,html,bode{
     display: flex;
     width: 100%;

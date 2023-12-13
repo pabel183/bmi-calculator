@@ -1,5 +1,10 @@
 :root {
-    color-scheme: only dark;
+    color-scheme: only light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      background-color: green;
+    }
   }
 #root,html,bode{
     display: flex;

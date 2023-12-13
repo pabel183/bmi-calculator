@@ -1,11 +1,7 @@
 :root {
-    color-scheme: only light;
+    background-color: white;
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      background-color: green;
-    }
-  }
+  
 #root,html,bode{
     display: flex;
     width: 100%;
